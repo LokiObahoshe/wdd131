@@ -48,7 +48,7 @@ aside {
     height: 100%;
 }
 
-.maincontent {
+main {
     grid-column: 2;
     background-color: var(--color2);
     height: 100%;
