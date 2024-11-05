@@ -80,16 +80,6 @@ li {
     margin: 20px;
 }
 
-h2 {
-    background-color: var(--background);
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 10px;
-    margin: -10px 0 50px 0;
-}
-
 /* Class Selectors */
 
 .card {
@@ -141,6 +131,16 @@ h2 {
     float: right;
 }
 
-.usah1 {
+.usah2 {
     text-align: center;
+}
+
+.cardh2design {
+    background-color: var(--background);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    margin: -10px 0 50px 0;
 }
