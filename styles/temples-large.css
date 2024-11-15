@@ -1,0 +1,29 @@
+@media screen and (min-width: 500px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 27px;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr;
+        padding: 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+}
