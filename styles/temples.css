@@ -115,3 +115,7 @@ figure {
 .open a {
     display: block;
 }
+
+.active {
+    background-color: #FFE6BB;
+}
