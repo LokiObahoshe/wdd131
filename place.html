@@ -19,39 +19,42 @@
         <h1>United States</h1>
     </header>
 
-    <section>
-        <picture>
-            <source srcset="images/united_states.webp" media="(min-width: 1000px)">
-            <img src="images/united_states_phone.webp" alt="example image">
-        </picture>
+    <main>
+        <section>
+            <picture>
+                <source srcset="images/united_states.webp" media="(min-width: 1000px)">
+                <img src="images/united_states_phone.webp" alt="example image">
+            </picture>
 
-        <div class="data">
-            <h2>Data</h2>
-            <p>Area: 3.79 million mi²</p>
-            <p>Population: 333.29 million</p>
-            <p>Languages: English</p>
-            <p>Currency: USD</p>
-            <p>Time Zone: CST</p>
-            <p>Internet TLD: .us</p>
-        </div>
-
-        <div class="weather">
-            <div class="weather-flex">
-                <h2>Weather</h2>
-                <img class="sunicon" src="images/cloudyicon.svg" alt="sun icon">
+            <div class="data">
+                <h2>Data</h2>
+                <p>Area: 3.79 million mi²</p>
+                <p>Population: 333.29 million</p>
+                <p>Languages: English</p>
+                <p>Currency: USD</p>
+                <p>Time Zone: CST</p>
+                <p>Internet TLD: .us</p>
             </div>
-            <p>Temperature: 9°C</p>
-            <p>Conditions: Partly Cloudy</p>
-            <p>Wind Speed: 5 km/h</p>
-            <p>Wind Chill: <span id=windchill></span>°C</p>
-        </div>
-    </section>
+
+            <div class="weather">
+                <div class="weather-flex">
+                    <h2>Weather</h2>
+                    <img class="sunicon" src="images/cloudyicon.svg" alt="sun icon">
+                </div>
+                <p>Temperature: 9°C</p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind Speed: 5 km/h</p>
+                <p>Wind Chill: <span id=windchill></span>°C</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
         <br>
-        <p class="footercolor">Last Modification: <span id="lastModified"></span></p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
+
 </body>
 
 </html>

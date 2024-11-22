@@ -2,11 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Itim", cursive;
+}
+
+:root {
+    --backgroundcolor: #7674BF;
+    --foregroundcolor: #403D95;
 }
 
 body {
-    background-color: #7674BF;
+    background-color: var(--backgroundcolor);
+    font-family: "Itim", cursive;
 }
 
 main {
@@ -14,7 +19,7 @@ main {
     flex-direction: column;
     padding: 10px;
     max-width: 100%;
-    height: 30vh;
+    min-height: 100vh;
     gap: 10px;
 }
 
@@ -32,7 +37,7 @@ header {
     padding: 20px;
     flex-direction: column;
     text-align: center;
-    background-color: #403D95;
+    background-color: var(--foregroundcolor);
 }
 
 h1 {
@@ -63,11 +68,11 @@ footer {
     min-height: 80px;
     width: 100%;
     text-align: center;
-    background-color: #403D95;
+    background-color: var(--foregroundcolor);
     color: white;
 }
 
-footer p {
+footer p{
     align-items: center;
     margin: 5px 0;
     font-size: 18px;
@@ -79,33 +84,28 @@ div {
 
 /* Class Selectors */
 
-.footercolor {
-    font-size: 18px;
-}
-
 .data,
 .weather {
     position: relative;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
+    font-size: 1.2rem;
+
 }
 
 .data {
-    height: 18rem;
+    min-height: 12rem;
 }
 
 .sunicon {
-    width: 17%;
+    display: inline-block;
+    width: 55px;
     height: auto;
 }
 
 
 /* Larger screen */
 @media screen and (min-width: 1000px) {
-
-    div {
-        margin-top: 0;
-    }
 
     img,
     picture img {
@@ -117,6 +117,7 @@ div {
         position: absolute;
         width: 20%;
         box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.35);
+        font-size: 1.5rem;
     }
 
     .data {
@@ -125,15 +126,15 @@ div {
     }
 
     .weather {
-        top: 800px;
+        top: 700px;
         right: 100px;
 
     }
 
     .weather-flex {
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
     .sunicon {
@@ -142,9 +143,8 @@ div {
 
     .weather-flex::after {
         content: "⛅";
-        font-size: 1.6rem;
+        font-size: 2rem;
         display: inline-block;
         text-align: center;
-        margin-top: 10px;
     }
 }
