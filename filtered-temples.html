@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples - Rebecca Sonderegger</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rebecca Sonderegger - Temple Page">
+    <meta name="author" content="Rebecca Sonderegger">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav class="navigation">
+            <a class="active" href="#" id="homefilter">Home</a>
+            <a href="#" id="oldfilter">Old</a>
+            <a href="#" id="newfilter">New</a>
+            <a href="#" id="largefilter">Large</a>
+            <a href="#" id="smallfilter">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="h2temples">Temples</h2>
+        <div id="temple-cards"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
+        <br>
+        <p class="footercolor">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

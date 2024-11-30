@@ -1,0 +1,33 @@
+main {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+div {
+    margin: 30px;
+}
+
+#joke {
+    padding: 10px;
+}
+
+.emote {
+    padding: 20px;
+}
+
+.emote button {
+    margin: 10px;
+}
+
+.emote img {
+    margin: 15px;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}

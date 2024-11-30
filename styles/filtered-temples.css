@@ -1,0 +1,128 @@
+:root {
+    --background: #E2B779;
+    --foreground: #735E3F;
+    --cardbackground: #F0F0F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    align-items: center;
+    max-width: 50%;
+}
+
+nav a {
+    display: none;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    background-color: var(--foreground);
+    color: white;
+    font-weight: 400;
+}
+
+main {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+    background-color: var(--background);
+    text-align: center;
+}
+
+footer p {
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 0 20px 0;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+#temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.temple-card-css {
+    text-align: center;
+    background-color: var(--cardbackground);
+    padding: 15px;
+    border: 1px solid #BEBEBE;
+}
+
+.temple-card-css p {
+    padding: 3px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #FFE6BB;
+}

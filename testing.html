@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/testing.css">
+    <script src="scripts/testing.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Change innerHTML:</h2>
+            <p id="joke">Why was Cindirella so bad at Soccor?</p>
+
+            <button type="button" onclick='changeJoke()'>Why?
+            </button>
+        </div>
+
+        <hr>
+
+        <div class="emote">
+            <h2>Change img src:</h2>
+            <img id="emotions" src="images/happy.png" width="150px" height="auto">
+
+            <div class="buttoncontainer">
+                <button onclick="changeEmotion('happy')">Happy</button>
+                <button onclick="changeEmotion('sad')">Sad</button>
+                <button onclick="changeEmotion('angry')">Angry</button>
+                <button onclick="changeEmotion('scared')">Scared</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Change inner CSS:</h2>
+
+            <p id="css">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor esse eligendi molestiae
+                ex amet
+                ipsum quisquam recusandae iusto dicta, sit in iure obcaecati facilis magni deleniti quae! Eos, soluta?
+            </p>
+
+            <button type="button" onclick="changeColor('red')">Red</button>
+            <button type="button" onclick="changeColor('blue')">Blue</button>
+            <button type="button" onclick="changeColor('green')">Green</button>
+            <button type="button" onclick="changeColor('orange')">Orange</button>
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Hide HTML:</h2>
+            <p id="hide">I'ma sneaky sneaky</p>
+
+            <button type="button" onclick="hideElement()">Hide</button>
+            <button type="button" onclick="showElement()">Show</button>
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Self inserted from js file:</h2>
+            <p id="math"></p>
+            <p id="variable"></p>
+            <p id="string"></p>
+
+            <h3>Array:</h3>
+            <p>This result is pulled form an array using the index [1].</p>
+            <p id="pokemonarray"></p>
+
+            <h3>Object:</h3>
+            <p>These results are pulled by an object element.</p>
+            <p id="object"></p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

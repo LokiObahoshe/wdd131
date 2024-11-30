@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 27px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .h2temples {
+        margin-bottom: 50px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #temple-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+}
