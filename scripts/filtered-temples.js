@@ -29,7 +29,7 @@ const temples = [
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-38451-main.jpg"
     },
     {
         templeName: "Yigo Guam",

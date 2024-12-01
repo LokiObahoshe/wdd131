@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Itim", cursive;
-    font-display: swap;
 }
 
 header {
@@ -55,7 +54,7 @@ main {
     padding: 10px;
     max-width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: 600px;
     align-items: center;
     text-align: center;
     gap: 10px;
@@ -85,12 +84,13 @@ footer p:last-child {
 }
 
 img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: 400px;
+    height: 250px;
     margin: 0 0 20px 0;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
     display: block;
+    object-fit: cover;
+    min-width: 200px;
 }
 
 .h2temples {
@@ -113,6 +113,13 @@ img {
     padding: 15px;
     border: 1px solid #BEBEBE;
     min-height: 350px;
+}
+
+.temple-card-css img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
 }
 
 .temple-card-css p {
