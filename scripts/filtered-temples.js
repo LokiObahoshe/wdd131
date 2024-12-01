@@ -135,6 +135,8 @@ function templeCard(templesList) {
         templeImage.setAttribute('src', temple.imageUrl);
         templeImage.setAttribute('alt', temple.templeName);
         templeImage.setAttribute('loading', 'lazy');
+        templeImage.setAttribute('width', '400');
+        templeImage.setAttribute('height', '250');
         templeCard.appendChild(templeImage);
 
         // The templeCardContainer const created before appends
