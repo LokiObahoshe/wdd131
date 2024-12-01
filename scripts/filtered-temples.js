@@ -207,7 +207,7 @@ smallLink.addEventListener("click", () => {
 
     const smallTemples = temples.filter(temple => {
         const area = parseInt(temple.area);
-        return area > 10000;
+        return area < 10000;
     });
     templeCard(smallTemples);
 });
