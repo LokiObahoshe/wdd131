@@ -1,0 +1,132 @@
+:root {
+    --background: #E2B779;
+    --foreground: #F5E0C1;
+    --pagecolor: #FFF9F0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: var(--pagecolor);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--background);
+    margin: 0;
+}
+
+main {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+form {
+    display: block;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: auto;
+    background-color: var(--foreground);
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+    background-color: var(--background);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.rating {
+    font-size: 23px;
+    text-align: center;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.checkbox input[type=checkbox] {
+    transform: scale(1.4);
+    margin: 5px;
+}
+
+.checkboxhead {
+    font-size: 14px;
+}
+
+.date,
+.text,
+.name {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.text select {
+    margin-top: 10px;
+    height: 30px;
+}
+
+.datehead {
+    margin-bottom: 10px;
+}
+
+.namehead {
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    width: 500px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviewmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.thankyou {
+    padding: 20px;
+    background-color: var(--background);
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.reviewh1 {
+    text-decoration: underline;
+}
+
+
+/* Larger Screen */
+@media only screen and (min-width: 500px) {}
