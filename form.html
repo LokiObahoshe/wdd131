@@ -7,9 +7,6 @@
     <title>WDD 131 - Form - Rebecca Sonderegger</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rebecca Sonderegger - Form Page">
     <meta name="author" content="Rebecca Sonderegger">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -23,7 +20,7 @@
     <form method="get" action="review.html">
         <fieldset>
             <div class="text">
-                <label>Product Name</label>
+                <label for="pname">Product Name</label>
                 <select id="pname" name="pname" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
@@ -33,49 +30,52 @@
         <fieldset>
             <div>Overall rating</div>
             <div class="rating">
-                <input type="radio" name="rating" id="starradio" value="star1" required>
-                <label for="star1">&star;</label>
+                <input type="radio" name="rating" id="starradio1" value="star1" required>
+                <label for="starradio1">&star;</label>
 
-                <input type="radio" name="rating" id="starradio" value="star2" required>
-                <label for="star2">&star;&star;</label>
+                <input type="radio" name="rating" id="starradio2" value="star2" required>
+                <label for="starradio2">&star;&star;</label>
 
-                <input type="radio" name="rating" id="starradio" value="star3" required>
-                <label for="star3">&star;&star;&star;</label>
+                <input type="radio" name="rating" id="starradio3" value="star3" required>
+                <label for="starradio3">&star;&star;&star;</label>
 
-                <input type="radio" name="rating" id="starradio" value="star4" required>
-                <label for="star4">&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" id="starradio4" value="star4" required>
+                <label for="starradio4">&star;&star;&star;&star;</label>
 
-                <input type="radio" name="rating" id="starradio" value="star5" required>
-                <label>&star;&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" id="starradio5" value="star5" required>
+                <label for="starradio5">&star;&star;&star;&star;&star;</label>
 
             </div>
         </fieldset>
 
         <fieldset>
             <div class="date">
-                <label class="datehead">Date of Installation</label>
-                <input type="date" name="installedDate" required>
+                <label for="dateinstall" class="datehead">Date of Installation</label>
+                <input type="date" id="dateinstall" name="installedDate" required>
             </div>
         </fieldset>
 
         <fieldset>
             <div class="checkboxhead">Which features did you find useful in the product? (check all that apply)</div>
             <div class="checkbox">
-                <label><input type="checkbox" id="durability" name="durability" value="ease"> Durability</label>
-                <label><input type="checkbox" id="easyuse" name="easyuse" value="ease"> Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="ease"> Preformance</label>
-                <label><input type="checkbox" id="design" name="design" value="ease"> Design</label>
+                <label for="durability"><input type="checkbox" id="durability" name="durability" value="ease">
+                    Durability</label>
+                <label for="easyuse"><input type="checkbox" id="easyuse" name="easyuse" value="ease"> Ease of
+                    Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="performance" value="ease">
+                    Preformance</label>
+                <label for="design"><input type="checkbox" id="design" name="design" value="ease"> Design</label>
             </div>
         </fieldset>
 
         <fieldset>
-            <label for="w3review">Written Review (Optional) </label><textarea id="reviewtextarea" name="reviewtextarea"
-                rows="4" cols="50"></textarea>
+            <label for="reviewtextarea">Written Review (Optional) </label><textarea id="reviewtextarea"
+                name="reviewtextarea" rows="4" cols="50"></textarea>
         </fieldset>
 
         <div class="name">
-            <label class="namehead">Your Name (Optional)</label>
-            <input type="text" name="textname">
+            <label for="textname" class="namehead">Your Name (Optional)</label>
+            <input type="text" id="textname" name="textname">
         </div>
 
         <input type="submit" value="Post Review">
