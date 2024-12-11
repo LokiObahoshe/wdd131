@@ -1,0 +1,306 @@
+:root {
+    --background: #4B5846;
+    --foreground: #F3FFEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+    font-family: "Itim", cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 140vh;
+    padding: 20px;
+    max-width: 100%;
+}
+
+section {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: var(--foreground);
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    background-color: var(--background);
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: none;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--foreground);
+    margin: 0;
+}
+
+nav.open {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+nav a {
+    display: none;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+nav a:hover {
+    background-color: var(--background);
+    color: white;
+}
+
+header img {
+    display: none;
+    max-width: 200px;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+    background-color: var(--background);
+    text-align: center;
+    z-index: 10;
+}
+
+footer p {
+    color: white;
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+button {
+    height: 100px;
+    width: 255px;
+    font-size: 30px;
+    color: white;
+    background-color: #C8393B;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #BFD0B8;
+}
+
+.hero {
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foregrounddog,
+.foregroundcat {
+    position: absolute;
+    height: auto;
+}
+
+.foregrounddog {
+    width: 450px;
+    top: 695px;
+    left: 1060px;
+    z-index: 3;
+}
+
+.foregroundcat {
+    width: 420px;
+    top: 950px;
+    left: 1080px;
+}
+
+.info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.foregroundpets {
+    display: none;
+}
+
+.sponser {
+    display: flex;
+    bottom: 300px;
+    left: 85px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border: 1px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#pet-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.pet-card-css {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--background);
+    padding: 15px;
+    border: 1px solid #BEBEBE;
+    min-height: 500px;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+.pet-card-css img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.pet-card-css p {
+    padding: 3px;
+    font-size: 17px;
+}
+
+.pet-card-css h2 {
+    text-decoration: underline;
+}
+
+.pet-card-css h2,
+p {
+    margin-bottom: 10px;
+}
+
+.favorite-star {
+    cursor: pointer;
+    font-size: 24px;
+    color: gray;
+}
+
+.favorite-star.active {
+    color: gold;
+}
+
+@media screen and (min-width: 500px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    header img {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 27px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    .foregroundpets {
+        display: block;
+    }
+
+    #pet-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

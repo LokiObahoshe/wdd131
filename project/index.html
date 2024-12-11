@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Project Home Page - Rebecca Sonderegger</title>
+    <meta name="description" content="WDD 131 - Project Home Page - Rebecca Sonderegger">
+    <meta name="author" content="Rebecca Sonderegger">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/x-icon" href="images/devotedcritters-logo.ico">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/devotedcritters-logo.png" alt="logo">
+        </a>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav class="navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="favorite.html">Your Favorites</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.webp" alt="hero image" loading="lazy">
+        </div>
+
+        <div class="sponser">
+            <a href="browse.html">
+                <button>Click Here to Find Your Future Pal!</button>
+            </a>
+        </div>
+
+        <div class="info">
+            <section>
+                <h2>Adopt Now!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus minus numquam quisquam quasi autem
+                    hic nostrum dicta iure est aperiam! Officiis sit dignissimos molestias dolorem odit accusantium
+                    placeat quis doloremque?</p>
+            </section>
+
+            <section>
+                <h2>Where to Find Our Pets</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam earum autem? Reiciendis
+                    accusantium hic aspernatur ducimus recusandae excepturi cupiditate corporis deleniti, commodi
+                    dolorum. Odit obcaecati reprehenderit dolores dolore nulla?</p>
+            </section>
+        </div>
+
+        <div class="foregroundpets">
+            <img class="foregroundcat" src="images/foreground-cat.png" alt="foreground cat" loading="lazy">
+            <img class="foregrounddog" src="images/foreground-dog.png" alt="foreground dog" loading="lazy">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
+        <br>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
