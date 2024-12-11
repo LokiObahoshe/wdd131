@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="icon" type="image/x-icon" href="images/devotedcritters-logo.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicondevotedcritters.ico">
     <script src="scripts/index.js" defer></script>
 </head>
 
@@ -31,7 +31,70 @@
     </header>
 
     <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <div class="text">
+                    <label for="pname">Product Name*</label>
+                    <select id="pname" name="pname" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
+            </fieldset>
 
+            <fieldset>
+                <div>Overall Rating*</div>
+                <div class="rating">
+                    <input type="radio" name="rating" id="starradio1" value="star1" required>
+                    <label for="starradio1">&star;</label>
+
+                    <input type="radio" name="rating" id="starradio2" value="star2" required>
+                    <label for="starradio2">&star;&star;</label>
+
+                    <input type="radio" name="rating" id="starradio3" value="star3" required>
+                    <label for="starradio3">&star;&star;&star;</label>
+
+                    <input type="radio" name="rating" id="starradio4" value="star4" required>
+                    <label for="starradio4">&star;&star;&star;&star;</label>
+
+                    <input type="radio" name="rating" id="starradio5" value="star5" required>
+                    <label for="starradio5">&star;&star;&star;&star;&star;</label>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="date">
+                    <label for="dateinstall" class="datehead">Date of Installation*</label>
+                    <input type="date" id="dateinstall" name="installedDate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="checkboxhead">Which features did you find useful in the product? (check all that apply)
+                </div>
+                <div class="checkbox">
+                    <label for="durability"><input type="checkbox" id="durability" name="durability" value="ease">
+                        Durability</label>
+                    <label for="easyuse"><input type="checkbox" id="easyuse" name="easyuse" value="ease"> Ease of
+                        Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="performance" value="ease">
+                        Preformance</label>
+                    <label for="design"><input type="checkbox" id="design" name="design" value="ease"> Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="reviewtextarea">Written Review (Optional) </label><textarea id="reviewtextarea"
+                    name="reviewtextarea" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <div class="name">
+                <label for="textname" class="namehead">Your Name (Optional)</label>
+                <input type="text" id="textname" name="textname">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
     </main>
 
     <footer>
