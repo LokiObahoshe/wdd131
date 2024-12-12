@@ -30,9 +30,18 @@
         </nav>
     </header>
 
-    <main>
+    <main class="indexmain">
+        <!--
         <div class="hero">
             <img src="images/hero.webp" alt="hero image" loading="lazy">
+        </div>
+        -->
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.jpg " alt="hero image">
+            </picture>
         </div>
 
         <div class="sponser">

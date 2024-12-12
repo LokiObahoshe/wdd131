@@ -31,17 +31,162 @@
     </header>
 
     <main>
+        <h1>Adopt a Pet</h1>
         <form method="get" action="review.html">
             <fieldset>
-                <div class="text">
-                    <label for="pname">Product Name*</label>
-                    <select id="pname" name="pname" required>
-                        <option value="" disabled selected>Select a Product ...</option>
-                    </select>
+                <h2>Personal Information</h2>
+                <div class="name">
+                    <label for="fullname" class="namehead">Full Name*</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <br>
+                <div class="date">
+                    <label for="date" class="datehead">Date of Birth*</label>
+                    <input type="date" id="date" name="birthDate" required>
+                </div>
+                <br>
+                <div>
+                    <label for="address" class="namehead">Address*</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city" class="namehead">City*</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="state" class="namehead">State*</label>
+                    <input type="text" id="state" name="state" required>
+
+                    <label for="zip" class="namehead">ZIP*</label>
+                    <input type="number" id="zip" name="zip" required>
+                </div>
+                <br>
+                <div class="name">
+                    <label for="pnumber" class="namehead">Phone Number*</label>
+                    <input type="tel" id="pnumber" name="pnumber" pattern="\(\d{3}\) \d{3}-\d{4}"
+                        placeholder="(xxx) xxx-xxxx" required>
+                </div>
+                <br>
+                <div class="name">
+                    <label for="email" class="namehead">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
             </fieldset>
 
             <fieldset>
+                <h2>Pet Identification</h2>
+                <div>
+                    <div class="checkboxhead">Please select a Pet Type first: *</div>
+                    <label for="cat">Cat</label>
+                    <input type="radio" id="cat" name="petType" value="cat">
+                    <label for="dog">Dog</label>
+                    <input type="radio" id="dog" name="petType" value="dog">
+                </div>
+                <br>
+                <div class="text">
+                    <label for="pname">Pet Name*</label>
+                    <select id="pname" name="pname" required>
+                        <option value="" disabled selected>Select a Pet You Wish to Adopt ...</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="petid" class="namehead">Adoption ID</label>
+                    <input type="text" id="petid" name="petid" disabled>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2>Living Environment and Pet's Needs</h2>
+                <div>
+                    <div class="checkboxhead">Do you live in a: *</div>
+                    <input type="radio" name="living" id="house" value="option1" required>
+                    <label for="house">House</label>
+
+                    <input type="radio" name="living" id="apartment" value="option2" required>
+                    <label for="apartment">Apartment</label>
+
+                    <input type="radio" name="living" id="condo" value="option3" required>
+                    <label for="condo">Condo</label>
+
+                    <input type="radio" name="living" id="other" value="option4" required>
+                    <label for="other">Other</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <div class="checkboxhead">Do you have a yard or outdoor space for the pet?: *</div>
+                    <input type="radio" name="yard" id="yardyes" value="option1" required>
+                    <label for="yardyes">Yes</label>
+
+                    <input type="radio" name="yard" id="yardno" value="option2" required>
+                    <label for="yardno">No</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2>Financial Readiness</h2>
+                <div>
+                    <div class="checkboxhead">Are you prepared for the financial responsibilities of pet ownership?
+                        (This includes food, vet visits, grooming, etc.): *
+                    </div>
+                    <input type="radio" name="finance" id="financeyes" value="option1" required>
+                    <label for="financeyes">Yes</label>
+
+                    <input type="radio" name="finance" id="financeno" value="option2" required>
+                    <label for="financeno">No</label>
+                </div>
+                <br>
+                <div>
+                    <div class="checkboxhead">Do you have a veterinarian or plan to get one?: *</div>
+                    <input type="radio" name="vet" id="vetyes" value="option1" required>
+                    <label for="vetyes">Yes</label>
+                    <input type="radio" name="vet" id="vetno" value="option2" required>
+                    <label for="vetno">No</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2>Adoption Fee</h2>
+                <br>
+                <div>
+                    <label for="petfee" class="namehead">Adoption Fee</label>
+                    <input type="text" id="petfee" name="petfee" disabled>
+                </div>
+                <br>
+                <div>
+                    <div class="checkboxhead">Payment Method: *</div>
+                    <input type="radio" name="payment" id="credit" value="option1" required>
+                    <label for="credit">Credit</label>
+                    <input type="radio" name="payment" id="debit" value="option2" required>
+                    <label for="debit">Debit</label>
+                    <input type="radio" name="payment" id="check" value="option2" required>
+                    <label for="check">Check</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2>Consent and Agreement</h2>
+                <div class="agreementmove">
+                    <div class="checkboxhead">By submitting this application, I agree to:</div>
+                    <ul>
+                        <li>Provide proper care and shelter for the adopted pet.</li>
+                        <li>Adhere to any specific instructions or conditions related to the pet's care (e.g., special
+                            dietary needs, medication).</li>
+                        <li>Not abandon or rehome the pet without consulting the adoption agency.</li>
+                        <li>Keep the pet’s identification updated.</li>
+                        <li>Return the pet to the shelter/agency if I am no longer able to care for it.</li>
+                    </ul>
+
+                    <div class="checkbox">
+                        <label for="iagree"><input type="checkbox" id="iagree" name="iagree" value="agree" required>
+                            I agree.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!--
+            <fieldset>
+                <h2>MISC.</h2>
                 <div>Overall Rating*</div>
                 <div class="rating">
                     <input type="radio" name="rating" id="starradio1" value="star1" required>
@@ -60,16 +205,10 @@
                     <label for="starradio5">&star;&star;&star;&star;&star;</label>
 
                 </div>
-            </fieldset>
-
-            <fieldset>
                 <div class="date">
                     <label for="dateinstall" class="datehead">Date of Installation*</label>
                     <input type="date" id="dateinstall" name="installedDate" required>
                 </div>
-            </fieldset>
-
-            <fieldset>
                 <div class="checkboxhead">Which features did you find useful in the product? (check all that apply)
                 </div>
                 <div class="checkbox">
@@ -81,9 +220,6 @@
                         Preformance</label>
                     <label for="design"><input type="checkbox" id="design" name="design" value="ease"> Design</label>
                 </div>
-            </fieldset>
-
-            <fieldset>
                 <label for="reviewtextarea">Written Review (Optional) </label><textarea id="reviewtextarea"
                     name="reviewtextarea" rows="4" cols="50"></textarea>
             </fieldset>
@@ -92,8 +228,9 @@
                 <label for="textname" class="namehead">Your Name (Optional)</label>
                 <input type="text" id="textname" name="textname">
             </div>
+            -->
 
-            <input type="submit" value="Post Review">
+            <input type="submit" value="Submit Application">
         </form>
     </main>
 

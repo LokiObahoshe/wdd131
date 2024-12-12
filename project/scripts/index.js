@@ -25,7 +25,8 @@ let cats = [
         health: "Spayed/Neutered, vaccinations up to date",
         goodWith: "Other cats, children.",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/fish.webp"
+        imageUrl: "images/cats/fish.webp",
+        id: "0001"
     },
     {
         name: "King",
@@ -38,7 +39,8 @@ let cats = [
         health: "Spayed/Neutered, vaccinations up to date",
         goodWith: "Other cats, children, dogs.",
         adoptionFee: "$100.00",
-        imageUrl: "images/cats/king.webp"
+        imageUrl: "images/cats/king.webp",
+        id: "0002"
     },
     {
         name: "Maxwell",
@@ -51,7 +53,8 @@ let cats = [
         health: "Spayed/Neutered, vaccinations up to date",
         goodWith: "Other cats, dogs",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/maxwell.webp"
+        imageUrl: "images/cats/maxwell.webp",
+        id: "0003"
     },
     {
         name: "Admiral Meowington",
@@ -64,7 +67,8 @@ let cats = [
         health: "Spayed/Neutered, vaccinations up to date",
         goodWith: "Children, other cats, children.",
         adoptionFee: "$50.00",
-        imageUrl: "images/cats/admiralmeowington.webp"
+        imageUrl: "images/cats/admiralmeowington.webp",
+        id: "0004"
     },
     {
         name: "Sir Pounce-A-Lot",
@@ -77,7 +81,8 @@ let cats = [
         health: "Spayed/Neutered, vaccinations up to date",
         goodWith: "Other cats.",
         adoptionFee: "$95.00",
-        imageUrl: "images/cats/sirpouncealot.webp"
+        imageUrl: "images/cats/sirpouncealot.webp",
+        id: "0005"
     },
     {
         name: "Tiddy",
@@ -90,7 +95,8 @@ let cats = [
         health: "Spayed/Neutered",
         goodWith: "Other cats.",
         adoptionFee: "$95.00",
-        imageUrl: "images/cats/tiddy.webp"
+        imageUrl: "images/cats/tiddy.webp",
+        id: "0006"
     },
     {
         name: "Nacho",
@@ -103,7 +109,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats.",
         adoptionFee: "$95.00",
-        imageUrl: "images/cats/nacho.webp"
+        imageUrl: "images/cats/nacho.webp",
+        id: "0007"
     },
     {
         name: "Caesar",
@@ -116,7 +123,8 @@ let cats = [
         health: "Vaccinations up to date.",
         goodWith: "N/A",
         adoptionFee: "$100.00",
-        imageUrl: "images/cats/Caesar.webp"
+        imageUrl: "images/cats/Caesar.webp",
+        id: "0008"
     },
     {
         name: "Bean",
@@ -129,7 +137,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats, dogs, children",
         adoptionFee: "$2.00",
-        imageUrl: "images/cats/Bean.webp"
+        imageUrl: "images/cats/Bean.webp",
+        id: "0009"
     },
     {
         name: "Atomic Toaster",
@@ -142,7 +151,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Children",
         adoptionFee: "$0.00",
-        imageUrl: "images/cats/atomictoaster.webp"
+        imageUrl: "images/cats/atomictoaster.webp",
+        id: "0010"
     },
     {
         name: "Julie",
@@ -155,7 +165,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats, children",
         adoptionFee: "$100.00",
-        imageUrl: "images/cats/julie.webp"
+        imageUrl: "images/cats/julie.webp",
+        id: "0011"
     },
     {
         name: "Freckle",
@@ -168,7 +179,8 @@ let cats = [
         health: "Spayed / neutered.",
         goodWith: "Dogs",
         adoptionFee: "$120.00",
-        imageUrl: "images/cats/freckle.webp"
+        imageUrl: "images/cats/freckle.webp",
+        id: "0012"
     },
     {
         name: "iPad 4",
@@ -181,7 +193,8 @@ let cats = [
         health: "Vaccinations up to date.",
         goodWith: "Other cats",
         adoptionFee: "$274.00",
-        imageUrl: "images/cats/ipad4.webp"
+        imageUrl: "images/cats/ipad4.webp",
+        id: "0013"
     },
     {
         name: "Fantastic Beast (Not a Tiger)",
@@ -194,7 +207,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Dogs",
         adoptionFee: "$500.00",
-        imageUrl: "images/cats/fantasticbeast.webp"
+        imageUrl: "images/cats/fantasticbeast.webp",
+        id: "0014"
     },
     {
         name: "Skull",
@@ -207,7 +221,8 @@ let cats = [
         health: "N/A",
         goodWith: "N/A",
         adoptionFee: "$50.00",
-        imageUrl: "images/cats/skull.webp"
+        imageUrl: "images/cats/skull.webp",
+        id: "0015"
     },
     {
         name: "Itsy-Bitsy-Spider",
@@ -220,7 +235,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Children, other cats, dogs",
         adoptionFee: "$90.00",
-        imageUrl: "images/cats/itsybitsyspider.webp"
+        imageUrl: "images/cats/itsybitsyspider.webp",
+        id: "0016"
     },
     {
         name: "The Great Catsby",
@@ -233,7 +249,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "N/A",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/thegreatcatsby.webp"
+        imageUrl: "images/cats/thegreatcatsby.webp",
+        id: "0017"
     },
     {
         name: "Gentleman (The Great Catsby's Son)",
@@ -246,7 +263,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats.",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/catsbyson.webp"
+        imageUrl: "images/cats/catsbyson.webp",
+        id: "0018"
     },
     {
         name: "Cloud",
@@ -259,7 +277,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Children, dogs",
         adoptionFee: "$50.00",
-        imageUrl: "images/cats/tom.webp"
+        imageUrl: "images/cats/tom.webp",
+        id: "0019"
     },
     {
         name: "BrightHeart",
@@ -272,7 +291,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/brightheart.webp"
+        imageUrl: "images/cats/brightheart.webp",
+        id: "0020"
     },
     {
         name: "Majesty",
@@ -285,7 +305,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats, children, dogs",
         adoptionFee: "$90.00",
-        imageUrl: "images/cats/majesty.webp"
+        imageUrl: "images/cats/majesty.webp",
+        id: "0021"
     },
     {
         name: "Purdy",
@@ -298,7 +319,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Dogs",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/purdy.webp"
+        imageUrl: "images/cats/purdy.webp",
+        id: "0022"
     },
     {
         name: "Danger Dave",
@@ -311,7 +333,8 @@ let cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "N/A",
         adoptionFee: "$75.00",
-        imageUrl: "images/cats/dangerdave.webp"
+        imageUrl: "images/cats/dangerdave.webp",
+        id: "0023"
     }
 ]
 
@@ -327,7 +350,8 @@ let dogs = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other dogs, children",
         adoptionFee: "$175.00",
-        imageUrl: "images/dogs/nimbus.jpg"
+        imageUrl: "images/dogs/nimbus.jpg",
+        id: "0024"
     },
     {
         name: "Nana",
@@ -340,7 +364,8 @@ let dogs = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other dogs, children, cats.",
         adoptionFee: "$350.00",
-        imageUrl: "images/dogs/nana.jpg"
+        imageUrl: "images/dogs/nana.jpg",
+        id: "0025"
     },
     {
         name: "Crayon",
@@ -353,7 +378,8 @@ let dogs = [
         health: "Vaccinations up to date",
         goodWith: "N/A",
         adoptionFee: "$350.00",
-        imageUrl: "images/dogs/crayon.jpg"
+        imageUrl: "images/dogs/crayon.jpg",
+        id: "0026"
     },
     {
         name: "Linguini",
@@ -366,7 +392,8 @@ let dogs = [
         health: "N/A",
         goodWith: "Other dogs, cats",
         adoptionFee: "$175.00",
-        imageUrl: "images/dogs/linguini.jpg"
+        imageUrl: "images/dogs/linguini.jpg",
+        id: "0027"
     },
     {
         name: "Fungus",
@@ -379,7 +406,8 @@ let dogs = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Cats",
         adoptionFee: "$300.00",
-        imageUrl: "images/dogs/fungus.jpg"
+        imageUrl: "images/dogs/fungus.jpg",
+        id: "0028"
     },
     {
         name: "Naughty Wilbur",
@@ -392,7 +420,8 @@ let dogs = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other dogs, children, cats",
         adoptionFee: "$500.00",
-        imageUrl: "images/dogs/naughtywilbur.jpg"
+        imageUrl: "images/dogs/naughtywilbur.jpg",
+        id: "0029"
     },
     {
         name: "Poppy",
@@ -405,7 +434,8 @@ let dogs = [
         health: "Spayed / neutered.",
         goodWith: "Cats",
         adoptionFee: "$450.00",
-        imageUrl: "images/dogs/poppy.jpg"
+        imageUrl: "images/dogs/poppy.jpg",
+        id: "0030"
     },
     {
         name: "Mickey",
@@ -418,7 +448,8 @@ let dogs = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other dogs, children, Bean",
         adoptionFee: "$500.00",
-        imageUrl: "images/dogs/mickey.jpg"
+        imageUrl: "images/dogs/mickey.jpg",
+        id: "0031"
     },
     {
         name: "Thickin Nugget",
@@ -431,7 +462,8 @@ let dogs = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other dogs, children, Bean",
         adoptionFee: "$500.00",
-        imageUrl: "images/dogs/thickinnugget.jpg"
+        imageUrl: "images/dogs/thickinnugget.jpg",
+        id: "0032"
     },
 ]
 
@@ -477,6 +509,10 @@ function petCard(petList) {
         const petFee = document.createElement('p');
         petFee.textContent = `Adoption Fee: ${pet.adoptionFee}`;
         petCard.appendChild(petFee);
+
+        const petId = document.createElement('p');
+        petId.textContent = `Adoption Number: ${pet.id}`;
+        petCard.appendChild(petId);
 
 
         const star = document.createElement('span');
@@ -571,10 +607,66 @@ function renderFavorites() {
             petFee.textContent = `Adoption Fee: ${pet.adoptionFee}`;
             petFavCard.appendChild(petFee);
 
+            const petId = document.createElement('p');
+            petId.textContent = `Adoption Number: ${pet.id}`;
+            petFavCard.appendChild(petId);
+
             petCardsFavContainer.appendChild(petFavCard);
         });
     }
 }
+
+const petTypeRadios = document.querySelectorAll('input[name="petType"]');
+const petSelect = document.getElementById("pname");
+
+function updatePetNames() {
+    petSelect.innerHTML = '<option value="" disabled selected>Select a Pet You Wish to Adopt ...</option>';
+
+    let petsToDisplay = [];
+
+    const selectedPetType = [...petTypeRadios].find(radio => radio.checked)?.value;
+
+    if (selectedPetType === "cat") {
+        petsToDisplay = cats;
+    } else if (selectedPetType === "dog") {
+        petsToDisplay = dogs;
+    }
+
+    petsToDisplay.sort((a, b) => a.name.localeCompare(b.name));
+
+    petsToDisplay.forEach(pet => {
+        const option = document.createElement("option");
+        option.value = pet.name;
+        option.textContent = pet.name;
+        petSelect.appendChild(option);
+    });
+
+    petSelect.addEventListener("change", function () {
+        const selectedPetName = petSelect.value;
+        const selectedPet = petsToDisplay.find(pet => pet.name === selectedPetName);
+
+        if (selectedPet) {
+            document.getElementById("petid").value = selectedPet.id;
+        } else {
+            document.getElementById("petid").value = 'An error occured.';
+        }
+    });
+
+    petSelect.addEventListener("change", function () {
+        const selectedPetName = petSelect.value;
+        const selectedPet = petsToDisplay.find(pet => pet.name === selectedPetName);
+
+        if (selectedPet) {
+            document.getElementById("petfee").value = selectedPet.adoptionFee;
+        } else {
+            document.getElementById("petfee").value = 'An error occured.';
+        }
+    });
+}
+
+petTypeRadios.forEach(radio => {
+    radio.addEventListener("change", updatePetNames);
+});
 
 if (window.location.pathname.includes('favorite.html')) {
     renderFavorites();
@@ -582,6 +674,8 @@ if (window.location.pathname.includes('favorite.html')) {
     petCard(cats);
 } else if (window.location.pathname.includes('dogs.html')) {
     petCard(dogs);
+} else if (window.location.pathname.includes('adopt.html')) {
+    updatePetNames();
 } else {
     petCard(cats);
 }
