@@ -22,7 +22,9 @@ button {
 main {
     display: flex;
     flex-direction: column;
-    min-height: auto;
+    min-height: 80vh;
+    ;
+    height: auto;
     padding: 20px;
     max-width: 100%;
 }
@@ -36,31 +38,31 @@ h1 {
 
 header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     width: 100%;
-    min-width: 100%;
     background-color: var(--background);
     margin: 0;
     padding: 20px;
     overflow: hidden;
+    position: relative;
 }
 
 header.open {
     height: 400px;
 }
 
-nav {
-    display: none;
-    width: 100%;
+.navigation {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--foreground);
+    list-style: none;
     padding: 20px 0;
     box-sizing: border-box;
+    background-color: var(--foreground);
+    width: 100%;
 }
 
 nav.open {
@@ -70,7 +72,7 @@ nav.open {
 }
 
 nav a {
-    display: block;
+    display: none;
     padding: 10px 20px;
     margin: 5px 0;
     font-size: 28px;
@@ -79,9 +81,6 @@ nav a {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-}
-
-nav a {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -91,7 +90,8 @@ nav a:hover {
 }
 
 header img {
-    position: absolute;
+    display: none;
+    position: relative;
     right: 270px;
     bottom: 565px;
     max-width: 100px;
@@ -99,7 +99,6 @@ header img {
 }
 
 footer {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,7 +134,6 @@ button:hover {
 }
 
 form {
-    display: block;
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
@@ -152,12 +150,14 @@ fieldset {
 
 #menu {
     font-size: 2rem;
-    border: 0;
     background: none;
+    border: none;
     color: #000;
+    cursor: pointer;
     position: absolute;
-    bottom: 580px;
-    left: 180px;
+    top: 20px;
+    left: 210px;
+    z-index: 10;
 }
 
 #menu::before {
@@ -178,7 +178,6 @@ fieldset {
 
 .hero {
     overflow: hidden;
-    border: 1px solid black;
 }
 
 .hero img {
@@ -235,9 +234,9 @@ fieldset {
 
 .sponser {
     display: flex;
-    bottom: 120px;
-    left: 70px;
-    position: absolute;
+    position: relative;
+    bottom: 90px;
+    left: 30px;
     width: 230px;
     height: 80px;
     padding: 20px;
@@ -247,7 +246,7 @@ fieldset {
     align-items: center;
     text-align: center;
     justify-content: center;
-
+    z-index: 5;
 }
 
 #pet-cards,
@@ -322,9 +321,8 @@ p {
 
 .emptymessagecss {
     display: flex;
-    justify-content: center;
-    width: 1500px;
-    font-size: 40px;
+    width: 300px;
+    font-size: 35px;
     align-items: center;
     text-align: center;
 }
@@ -433,101 +431,11 @@ input[type=submit] {
     min-height: 140vh;
 }
 
-@media screen and (min-width: 500px) {
-
-    header {
-        flex-direction: row;
-        height: 180px;
-    }
-
-    header img {
-        position: static;
-        max-width: 200px;
-        display: block;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    nav a {
-        display: inline-block;
-        padding: 10px;
-        margin: 10px;
-        font-size: 22px;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        display: block;
-    }
-
-    nav a:hover {
-        transform: scale(1.1);
-    }
-
-    form {
-        display: block;
-        max-width: 1000px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        height: auto;
-        background-color: var(--foreground);
-    }
-
-    button {
-        font-size: 30px;
-        height: 100px;
-        width: 255px;
-    }
-
-    .foregroundpets {
-        display: block;
-    }
-
-    #pet-cards,
-    #pet-cards-fav {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .thankyou {
-        width: 1000px;
-    }
-
-    .browsepets img {
-        width: 400px;
-    }
-
-    .info {
-        width: 80%;
-        flex-direction: row;
-    }
-
-    .info section {
-        width: 500px;
-        font-size: 25px;
-    }
-
-    .sponser {
-        width: auto;
-        height: auto;
-        bottom: 300px;
-        left: 85px;
-    }
-
-    .hero {
-        border: none;
-    }
+.removefavoritebutton {
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
 }

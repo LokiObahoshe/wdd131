@@ -12,16 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="icon" type="image/x-icon" href="images/favicondevotedcritters.ico">
-    <script src="scripts/index.js" defer></script>
+    <script type="module" src="scripts/index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img src="images/devotedcritters-logo.png" alt="logo">
+        <a href="index.html" aria-label="Logo for website">
+            <img src="images/devotedcritters-logo.webp" alt="logo">
         </a>
-        <button id="menu" aria-label="Open menu"></button>
+        <button id="menu" aria-label="Open menu" type="button"></button>
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="browse.html">Browse</a>
@@ -34,7 +35,7 @@
         <h1>Adopt a Pet</h1>
         <form method="get" action="review.html">
             <fieldset>
-                <h2>Personal Information</h2>
+                <legend>Personal Information</legend>
                 <div class="name">
                     <label for="fullname" class="namehead">Full Name*</label>
                     <input type="text" id="fullname" name="fullname" required>
@@ -72,7 +73,7 @@
             </fieldset>
 
             <fieldset>
-                <h2>Pet Identification</h2>
+                <legend>Pet Identification</legend>
                 <div>
                     <div class="checkboxhead">Please select a Pet Type first: *</div>
                     <label for="cat">Cat</label>
@@ -95,7 +96,7 @@
             </fieldset>
 
             <fieldset>
-                <h2>Living Environment and Pet's Needs</h2>
+                <legend>Living Environment and Pet's Needs</legend>
                 <div>
                     <div class="checkboxhead">Do you live in a: *</div>
                     <input type="radio" name="living" id="house" value="option1" required>
@@ -124,7 +125,7 @@
             </fieldset>
 
             <fieldset>
-                <h2>Financial Readiness</h2>
+                <legend>Financial Readiness</legend>
                 <div>
                     <div class="checkboxhead">Are you prepared for the financial responsibilities of pet ownership?
                         (This includes food, vet visits, grooming, etc.): *
@@ -146,7 +147,7 @@
             </fieldset>
 
             <fieldset>
-                <h2>Adoption Fee</h2>
+                <legend>Adoption Fee</legend>
                 <br>
                 <div>
                     <label for="petfee" class="namehead">Adoption Fee</label>
@@ -165,7 +166,7 @@
             </fieldset>
 
             <fieldset>
-                <h2>Consent and Agreement</h2>
+                <legend>Consent and Agreement</legend>
                 <div class="agreementmove">
                     <div class="checkboxhead">By submitting this application, I agree to:</div>
                     <ul>

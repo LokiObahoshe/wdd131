@@ -12,16 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="icon" type="image/x-icon" href="images/favicondevotedcritters.ico">
-    <script src="scripts/index.js" defer></script>
+    <script type="module" src="scripts/index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img src="images/devotedcritters-logo.png" alt="logo">
+        <a href="index.html" aria-label="Logo for website">
+            <img src="images/devotedcritters-logo.webp" alt="logo">
         </a>
-        <button id="menu" aria-label="Open menu"></button>
+        <button id="menu" aria-label="Open menu" type="button"></button>
         <nav class="navigation">
             <a class="active" href="index.html">Home</a>
             <a href="browse.html">Browse</a>
@@ -31,16 +32,10 @@
     </header>
 
     <main class="indexmain">
-        <!--
-        <div class="hero">
-            <img src="images/hero.webp" alt="hero image" loading="lazy">
-        </div>
-        -->
-
         <div class="hero">
             <picture>
                 <source srcset="images/hero.webp" media="(min-width: 500px)">
-                <img src="images/hero-small.jpg " alt="hero image">
+                <img src="images/hero-small.webp" alt="hero image">
             </picture>
         </div>
 

@@ -1,0 +1,104 @@
+@media screen and (min-width: 500px) {
+
+    header {
+        flex-direction: row;
+        height: 180px;
+    }
+
+    header img {
+        position: static;
+        max-width: 200px;
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 22px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    form {
+        display: block;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: auto;
+        background-color: var(--foreground);
+    }
+
+    button {
+        font-size: 30px;
+        height: 100px;
+        width: 255px;
+    }
+
+    .foregroundpets {
+        display: block;
+    }
+
+    #pet-cards,
+    #pet-cards-fav {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .thankyou {
+        width: 1000px;
+    }
+
+    .browsepets img {
+        width: 400px;
+    }
+
+    .info {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .info section {
+        width: 500px;
+        font-size: 25px;
+    }
+
+    .sponser {
+        width: auto;
+        height: auto;
+        bottom: 300px;
+        left: 85px;
+        position: absolute;
+    }
+
+    .hero {
+        border: none;
+    }
+
+    .emptymessagecss {
+        justify-content: center;
+        width: 1500px;
+        font-size: 40px;
+    }
+}
