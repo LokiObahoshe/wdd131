@@ -108,7 +108,7 @@ export const cats = [
         health: "Vaccinations up to date.",
         goodWith: "N/A",
         adoptionFee: "$100.00",
-        imageUrl: "images/cats/caesar.webp",
+        imageUrl: "images/cats/caesar.jpg",
         id: "0008"
     },
     {
@@ -122,7 +122,7 @@ export const cats = [
         health: "Vaccinations up to date, spayed / neutered.",
         goodWith: "Other cats, dogs, children",
         adoptionFee: "$2.00",
-        imageUrl: "images/cats/bean.webp",
+        imageUrl: "images/cats/bean.jpg",
         id: "0009"
     },
     {
