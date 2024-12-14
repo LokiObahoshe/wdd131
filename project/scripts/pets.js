@@ -1,3 +1,7 @@
+// index.js started to get too big with all of these
+// pets, so I tried to seperate them using exports and imports.
+// If this is a problem, please let me know, thank you!
+
 export const cats = [
     {
         name: "Fish",

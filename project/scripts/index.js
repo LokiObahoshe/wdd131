@@ -1,10 +1,15 @@
+//This grabs the pet informating by importing
 import { cats, dogs } from './pets.js';
+
+/*********************** Modified Date ***********************/
 
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
+
+/*********************** Hamburger Menu ***********************/
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -14,6 +19,8 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
     document.querySelector('header').classList.toggle('open');
 });
+
+/*********************** The Pet Cards ***********************/
 
 function petCard(petList) {
     const petCardsContainer = document.querySelector('#pet-cards');
@@ -62,7 +69,9 @@ function petCard(petList) {
         petId.textContent = `Adoption Number: ${pet.id}`;
         petCard.appendChild(petId);
 
-
+        // This creates the star button so users can
+        // save pets they like or wish to adopt
+        // in the future
         const star = document.createElement('span');
         star.classList.add('favoritecss');
         star.textContent = '☆';
@@ -82,6 +91,7 @@ function petCard(petList) {
     });
 }
 
+/*********************** Favorite Pets ***********************/
 
 function isPetInFavorites(pet) {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -107,14 +117,15 @@ function toggleFavorite(pet, star) {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
-
+// Render the favorite pets on the "Your Favorites" page
 function renderFavorites() {
     const petCardsFavContainer = document.querySelector('#pet-cards-fav');
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
     petCardsFavContainer.innerHTML = '';
 
-
+    // This is to make sure there is a
+    // message for when the list is empty
     if (favorites.length === 0) {
         const emptyMessage = document.createElement('p');
         emptyMessage.classList.add('emptymessagecss');
@@ -173,6 +184,8 @@ function renderFavorites() {
     }
 }
 
+/*********************** Remove Favorite Pets ***********************/
+
 function removeFavorite(pet, petCard) {
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
@@ -188,6 +201,8 @@ function removeFavorite(pet, petCard) {
     }
 }
 
+/*********************** Update Pet Names for Form Dropdown ***********************/
+
 const petTypeRadios = document.querySelectorAll('input[name="petType"]');
 const petSelect = document.getElementById("pname");
 
@@ -198,12 +213,15 @@ function updatePetNames() {
 
     const selectedPetType = [...petTypeRadios].find(radio => radio.checked)?.value;
 
+    // This is what changes the dropdown depending
+    // on what the user chose (cat or dog)
     if (selectedPetType === "cat") {
         petsToDisplay = cats;
     } else if (selectedPetType === "dog") {
         petsToDisplay = dogs;
     }
 
+    // This organizes the list alphabetically
     petsToDisplay.sort((a, b) => a.name.localeCompare(b.name));
 
     petsToDisplay.forEach(pet => {
@@ -213,6 +231,8 @@ function updatePetNames() {
         petSelect.appendChild(option);
     });
 
+    // This is for the pet ID in the Form when
+    // a pet is chosen
     petSelect.addEventListener("change", function () {
         const selectedPetName = petSelect.value;
         const selectedPet = petsToDisplay.find(pet => pet.name === selectedPetName);
@@ -239,6 +259,8 @@ function updatePetNames() {
 petTypeRadios.forEach(radio => {
     radio.addEventListener("change", updatePetNames);
 });
+
+/*********************** Calling The Functions ***********************/
 
 if (window.location.pathname.includes('favorite.html')) {
     renderFavorites();
