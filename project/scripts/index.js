@@ -20,6 +20,68 @@ hamButton.addEventListener('click', () => {
     document.querySelector('header').classList.toggle('open');
 });
 
+/*********************** Filter Pets ***********************/
+
+function applyFilters(petList) {
+    const adoptFeeFilter = document.getElementById("adoptFee").value;
+    const goodWithFilter = document.getElementById("goodWith").value;
+    const ageFilter = document.getElementById("age").value;
+
+    let filteredPets = petList;
+
+    if (adoptFeeFilter === "below100") {
+        filteredPets = filteredPets.filter(pet => parseFloat(pet.adoptionFee.replace('$', '')) < 100);
+    } else if (adoptFeeFilter === "above100") {
+        filteredPets = filteredPets.filter(pet => parseFloat(pet.adoptionFee.replace('$', '')) > 100);
+    }
+
+    if (goodWithFilter) {
+        filteredPets = filteredPets.filter(pet => pet.goodWith.toLowerCase().includes(goodWithFilter.toLowerCase()));
+    }
+
+    // The extra code here is to make sure that
+    // the "Kitten" and "Puppy" ages don't interfere
+    // with each other.
+    if (ageFilter) {
+        if (window.location.pathname.includes('cats.html')) {
+            if (ageFilter === "young") {
+                filteredPets = filteredPets.filter(pet => pet.age.toLowerCase() === "kitten");
+            } else if (ageFilter !== "all" && ageFilter !== "") {
+                filteredPets = filteredPets.filter(pet => pet.age.toLowerCase() === ageFilter.toLowerCase());
+            }
+        } else if (window.location.pathname.includes('dogs.html')) {
+            if (ageFilter === "young") {
+                filteredPets = filteredPets.filter(pet => pet.age.toLowerCase() === "puppy");
+            } else if (ageFilter !== "all" && ageFilter !== "") {
+                filteredPets = filteredPets.filter(pet => pet.age.toLowerCase() === ageFilter.toLowerCase());
+            }
+        } else {
+            filteredPets = filteredPets.filter(pet => pet.age.toLowerCase() === ageFilter.toLowerCase());
+        }
+    }
+
+    return filteredPets;
+}
+
+//This updates the pet cards with the filters chosen
+function updatePetCards() {
+    const petList = window.location.pathname.includes('cats.html') ? cats : dogs;
+    const filteredPets = applyFilters(petList);
+    petCard(filteredPets);
+}
+
+
+/*********************** Clear Filters Button ***********************/
+
+function clearFilters() {
+    document.getElementById("adoptFee").value = "";
+    document.getElementById("goodWith").value = "";
+    document.getElementById("age").value = "";
+
+    const petList = window.location.pathname.includes('cats.html') ? cats : dogs;
+    petCard(petList);
+}
+
 /*********************** The Pet Cards ***********************/
 
 function petCard(petList) {
@@ -266,8 +328,48 @@ if (window.location.pathname.includes('favorite.html')) {
     renderFavorites();
 } else if (window.location.pathname.includes('cats.html')) {
     petCard(cats);
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (document.body.classList.contains("filteractive")) {
+
+            const filterForm = document.getElementById("filterForm");
+            if (filterForm) {
+                filterForm.addEventListener("change", updatePetCards);
+            } else {
+                console.log("An error occurred: filterForm not found.");
+            }
+
+            const clearFilterButton = document.getElementById("clearFilterButton");
+            if (clearFilterButton) {
+                clearFilterButton.addEventListener("click", clearFilters);
+            } else {
+                console.log("An error occurred: clearFilterButton not found.");
+            }
+        }
+    });
+
 } else if (window.location.pathname.includes('dogs.html')) {
     petCard(dogs);
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (document.body.classList.contains("filteractive")) {
+
+            const filterForm = document.getElementById("filterForm");
+            if (filterForm) {
+                filterForm.addEventListener("change", updatePetCards);
+            } else {
+                console.log("An error occurred: filterForm not found.");
+            }
+
+            const clearFilterButton = document.getElementById("clearFilterButton");
+            if (clearFilterButton) {
+                clearFilterButton.addEventListener("click", clearFilters);
+            } else {
+                console.log("An error occurred: clearFilterButton not found.");
+            }
+        }
+    });
+
 } else if (window.location.pathname.includes('adopt.html')) {
     updatePetNames();
 }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
 
     header {
         flex-direction: row;
@@ -66,6 +66,10 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    #filters {
+        width: 30%;
+    }
+
     .thankyou {
         width: 1000px;
     }
@@ -81,7 +85,7 @@
 
     .info section {
         width: 500px;
-        font-size: 25px;
+        font-size: 29px;
     }
 
     .sponser {

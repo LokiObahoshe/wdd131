@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
     <link rel="icon" type="image/x-icon" href="images/favicondevotedcritters.ico">
-    <script type="module" src="scripts/index.js" defer></script>
+    <script type="module" src="scripts/index.js"></script>
 </head>
 
-<body>
+<body class="filteractive">
     <header>
         <a href="index.html" aria-label="Logo for website">
             <img src="images/devotedcritters-logo.webp" alt="logo">
@@ -33,6 +33,41 @@
 
     <main>
         <h1>Cats Near You</h1>
+
+        <div id="filters">
+            <form id="filterForm">
+                <label for="adoptFee">Adoption Fee:</label>
+                <select id="adoptFee">
+                    <option selected disabled value="">Select Fee Range</option>
+                    <option value="below100">Below $100</option>
+                    <option value="above100">Above $100</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="goodWith">Good with:</label>
+                <select id="goodWith">
+                    <option selected disabled value="">Select Compatibility</option>
+                    <option value="cats">Cats</option>
+                    <option value="children">Children</option>
+                    <option value="dogs">Dogs</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="age">Age:</label>
+                <select id="age">
+                    <option selected disabled value="">Select Age</option>
+                    <option value="kitten">Kitten</option>
+                    <option value="adult">Adult</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </form>
+            <button id="clearFilterButton">Clear Filters</button>
+        </div>
+
         <div id="pet-cards"></div>
     </main>
 
